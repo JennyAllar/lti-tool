@@ -1,7 +1,6 @@
 
 class LtiController < ApplicationController
 
-  # TODO: pull name / role / context title from params and print them out instead of hard-coding
 
   $oauth_creds = {"test" => "secret", "testing" => "supersecret"}
 
@@ -39,7 +38,7 @@ class LtiController < ApplicationController
     end
   end
 
-  # TODO: do crazy oauth shit to verify request
+  # TODO: do crazy oauth stuff to verify request
 
   def correct?
     if params[:oauth_consumer_key] == CONSUMER_KEY
