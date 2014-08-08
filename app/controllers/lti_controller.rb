@@ -28,7 +28,7 @@ class LtiController < ApplicationController
         return false
       end
     else
-      show_error "No consumer key"
+      "No consumer key"
       return false
     end
 
